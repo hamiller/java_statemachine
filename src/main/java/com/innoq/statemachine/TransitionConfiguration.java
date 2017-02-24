@@ -9,9 +9,7 @@ public enum TransitionConfiguration {
 	DEFAULT(Lists.newArrayList(
 			new Transition(State.DRAFT, 		Action.SUBMIT_REQUEST, 			State.IN_APPROVAL),	
             new Transition(State.IN_CHANGE, 	Action.RESUBMIT_REQUEST, 		State.IN_APPROVAL),	
-            new Transition(State.DRAFT, 		Action.SUBMIT_REQUEST, 			State.IN_APPROVAL),	
-            new Transition(State.IN_CHANGE, 	Action.RESUBMIT_REQUEST, 		State.IN_APPROVAL),	
-            new Transition(State.IN_APPROVAL, 	Action.APPROVE_REQUEST, 		State.IN_APPROVAL), 	
+            new Transition(State.IN_APPROVAL, 	Action.APPROVE_REQUEST, 		State.APPROVED), 	
             new Transition(State.IN_APPROVAL, 	Action.ASK_FOR_CHANGE, 			State.IN_CHANGE)
     ));
 

@@ -40,5 +40,4 @@ public class StateMachine {
 
 		return this;
 	}
-
 }
